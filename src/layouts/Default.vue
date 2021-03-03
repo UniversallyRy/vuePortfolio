@@ -1,12 +1,15 @@
 <template>
   <v-app>
-    <v-navigation-drawer width='200' permanent>
+    <v-navigation-drawer 
+    width="200"
+    permanent
+    >
       <v-list-item>
         <!-- <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
         </v-list-item-avatar> -->
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title" >
             Ryan Paige
           </v-list-item-title>
           <v-list-item-subtitle>
@@ -25,6 +28,7 @@
           v-for="item in items"
           :key="item.title"
           link
+          :to="`#${item.title.toLowerCase()}`"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -47,10 +51,10 @@
     data () {
       return {
         items: [
-          { title: 'About', icon: 'mdi-account-circle-outline' },
-          { title: 'Projects', icon: 'mdi-folder-table-outline' },
-          { title: 'Random', icon: 'mdi-post-outline' },
-          { title: 'Contact', icon: 'mdi-card-account-phone-outline' },
+          { title: "About", icon: "mdi-account-circle-outline" },
+          { title: "Projects", icon: "mdi-folder-table-outline" },
+          // { title: "Random", icon: "mdi-post-outline" },
+          { title: "Contact", icon: "mdi-card-account-phone-outline" },
         ],
         right: null,
       }
@@ -67,7 +71,15 @@ query {
 </static-query>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
   .v-application--wrap {
     flex-direction: row;
+  }
+  .v-main {
+    flex: 1 0;
+    margin-left: 100px;
+    margin-right: 10px;
   }
 </style>

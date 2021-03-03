@@ -1,21 +1,20 @@
 <template>
-    <section class='project-section'>
+    <section id="projects" class="project-section">
         <v-container>
             <v-row>
                 <v-col>
                     <h1>Projects</h1>
                 </v-col>
             </v-row>
-            <v-row class='justify-space-around mb-7 mt-4'>
+            <v-row class=" justify-space-around mb-7 mt-4">
                     <v-card
                         v-for="project in projects"
                         :key="project.name"
-                        class=""
                         max-width="300"
                     >
                         <v-img
                         class="white--text align-end"
-                        height="200px"
+                        height="450px"
                         :src="project.image"
                         >
                         <v-card-title>{{ project.name }}</v-card-title>
@@ -28,7 +27,7 @@
                         <v-btn
                             color="#242331"
                             text
-                            :href='project.github'
+                            :href="project.github"
                         >
                             See Code
                         </v-btn>
@@ -45,28 +44,28 @@ export default {
         return {
             projects: [
                 {
-                    name:'NBA App',
-                    github:'https://github.com/UniversallyRy/scoreChecker',
-                    description: 'A NBA App created with React.',
-                    image: 'https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/sScoreCard.gif'
+                    name:"NBA App",
+                    github:"https://github.com/UniversallyRy/scoreChecker",
+                    description: "A NBA App created with React.",
+                    image: "https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/sScoreCard.gif"
                 },
                 {
-                    name:'Todo App',
-                    github:'https://github.com/UniversallyRy/reacttodo',
-                    description: 'A Todo App created with React.',
-                    image: 'https://user-images.githubusercontent.com/24601662/109756755-7f9a1200-7bb6-11eb-9f66-177307887582.png'
+                    name:"Todo App",
+                    github:"https://github.com/UniversallyRy/reacttodo",
+                    description: "A Todo App created with React.",
+                    image: "https://user-images.githubusercontent.com/24601662/109756755-7f9a1200-7bb6-11eb-9f66-177307887582.png"
                 },
                 {
-                    name:'Pomodoro App',
-                    github:'https://github.com/UniversallyRy/pomov2',
-                    description: 'Pomodoro App Created with React.',
-                    image: ''
+                    name:"Pomodoro App",
+                    github:"https://github.com/UniversallyRy/pomov2",
+                    description: "Pomodoro App Created with React.",
+                    image: ""
                 },
                 {
-                    name:'Tac Toe App',
-                    github:'https://github.com/UniversallyRy/reacttactoe',
-                    description: 'A Tic Tac Toe game created with React',
-                    image: 'https://user-images.githubusercontent.com/24601662/109756347-c63b3c80-7bb5-11eb-90c1-ff6ff5b19166.png'
+                    name:"Tac Toe App",
+                    github:"https://github.com/UniversallyRy/reacttactoe",
+                    description: "A Tic Tac Toe game created with React",
+                    image: "https://user-images.githubusercontent.com/24601662/109756347-c63b3c80-7bb5-11eb-90c1-ff6ff5b19166.png"
                 },
                 
             ]
@@ -75,7 +74,7 @@ export default {
     methods: {
         truncate(str) {
             if (str.length > 70) {
-                return str.slice(0, 69) + '...'
+                return str.slice(0, 69) + "..."
             }else {
                 return str;
             }

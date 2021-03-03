@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import About from '@/components/About.vue'
-import Projects from '@/components/Projects.vue'
-import Random from '@/components/Random.vue'
-import Contact from '@/components/Contact.vue'
+import About from "@/components/About.vue"
+import Projects from "@/components/Projects.vue"
+import Random from "@/components/Random.vue"
+import Contact from "@/components/Contact.vue"
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Hello, world!"
   },
   components: {
     About,
