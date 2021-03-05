@@ -14,7 +14,7 @@ import Random from "@/components/Random.vue"
 import Contact from "@/components/Contact.vue"
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Ryan Paige's Portfolio"
   },
   components: {
     About,

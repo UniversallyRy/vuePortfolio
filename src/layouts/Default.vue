@@ -1,22 +1,24 @@
 <template>
   <v-app>
-    <v-navigation-drawer 
+    <v-navigation-drawer
     width="200"
     permanent
     >
-      <v-list-item>
-        <!-- <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
-        </v-list-item-avatar> -->
-        <v-list-item-content>
-          <v-list-item-title class="title" >
-            Ryan Paige
-          </v-list-item-title>
-          <v-list-item-subtitle>
-            Software Developer
-          </v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
+      <template>
+        <v-list-item two-line>
+          <!-- <v-list-item-avatar>
+            <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
+          </v-list-item-avatar> -->
+          <v-list-item-content>
+            <v-list-item-title class="title" >
+              Ryan Paige
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              Software Developer
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </template>
 
       <v-divider></v-divider>
 
