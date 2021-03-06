@@ -3,7 +3,7 @@
         <v-container>
             <v-row>
                 <v-column class="mx-auto">
-                    <h1>Contact Information</h1>
+                    <h1>Contact Me</h1>
                 </v-column>
             </v-row>
             <v-row>

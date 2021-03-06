@@ -1,3 +1,5 @@
+// todos: better spacing, more projects, color scheme, more components, diagonal header, spawn theme
+
 <template>
   <Layout>
     <About/>
