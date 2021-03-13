@@ -78,8 +78,13 @@ query {
   }
   .v-application--wrap {
     flex-direction: row;
+    background-color: indianred;
+  }
+  .v-list-item {
+    background-color:antiquewhite;
   }
   .v-main {
+    background-color: indianred;
     flex: 1 0;
     margin-left: 50px;
   }
