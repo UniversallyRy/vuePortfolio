@@ -55,7 +55,7 @@
         items: [
           { title: "About", icon: "mdi-account-circle-outline" },
           { title: "Projects", icon: "mdi-folder-table-outline" },
-          // { title: "Random", icon: "mdi-post-outline" },
+          { title: "Blogs", icon: "mdi-post-outline" },
           { title: "Contact", icon: "mdi-card-account-phone-outline" },
         ],
         right: null,

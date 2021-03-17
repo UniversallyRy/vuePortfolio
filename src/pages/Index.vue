@@ -4,7 +4,6 @@
   <Layout>
     <About/>
     <Projects/>
-    <!-- <Random/> -->
     <Contact/>
   </Layout>
 </template>
@@ -12,7 +11,6 @@
 <script>
 import About from "@/components/About.vue"
 import Projects from "@/components/Projects.vue"
-import Random from "@/components/Random.vue"
 import Contact from "@/components/Contact.vue"
 export default {
   metaInfo: {
@@ -21,7 +19,6 @@ export default {
   components: {
     About,
     Projects,
-    Random,
     Contact,
   }
 }
