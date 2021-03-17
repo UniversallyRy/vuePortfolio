@@ -1,7 +1,7 @@
 <template>
   <div class="post-list">
     <article class="post" v-for="post in posts" :key="post.node.id">
-      <h4>{{post.node.title}}</h4>
+      <h4 class=post-title>{{post.node.title}}</h4>
       <p>Published on {{post.node.date}}</p>
       <g-link :to="post.node.path">Read article</g-link>
     </article>
@@ -16,7 +16,13 @@ export default {
 
 <style>
 .post-list {
-  margin-top: 12px;
+  margin-top: 18px;
+}
+.post-title {
+  font-size: 24px;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 10px;
 }
 
 .post {

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Blog</h1>
+    <h1>Blogs</h1>
     <p>This is the blog page.</p>
     <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
@@ -11,13 +11,19 @@ import BlogPostList from '~/components/BlogPostList.vue';
 
 export default {
   metaInfo: {
-    title: 'Blog'
+    title: 'Blogs'
   },
   components: {
     BlogPostList
   }
 }
 </script>
+
+<style>
+html{
+  background-color:steelblue;
+}
+</style>
 
 <page-query>
 query {
