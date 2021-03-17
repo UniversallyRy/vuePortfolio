@@ -3,6 +3,8 @@
     <v-navigation-drawer
     width="200"
     permanent
+    class="nav-drawer"
+    color="black"
     >
       <template>
         <v-list-item two-line>
@@ -78,14 +80,16 @@ query {
   }
   .v-application--wrap {
     flex-direction: row;
-    background-color: indianred;
+    background-color: black;
   }
   .v-list-item {
-    background-color:antiquewhite;
+    background-color:greenyellow;
   }
   .v-main {
-    background-color: indianred;
     flex: 1 0;
     margin-left: 50px;
+  }
+  .nav-drawer{
+    color:black;
   }
 </style>

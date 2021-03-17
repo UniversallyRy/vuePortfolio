@@ -18,6 +18,7 @@
 <style>
   .bio-paragraph {
     margin-top: 30px;
+    color: greenyellow
   }
   .jsspan {
     color: red;
