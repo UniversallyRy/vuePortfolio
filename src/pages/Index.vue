@@ -9,6 +9,8 @@
 </template>
 
 <script>
+// todos: add blog page, add blog entries, decide if blog will be priv/publ
+// style page(spawn/cyberpunk colors?), add more components and optimize code and site speed
 import About from "@/components/About.vue"
 import Projects from "@/components/Projects.vue"
 import Contact from "@/components/Contact.vue"
