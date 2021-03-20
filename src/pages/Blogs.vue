@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <h1>Blogs</h1>
-    <p>This is the blog page.</p>
+    <h1 class='text-style'>Blogs</h1>
+    <p class='text-style'>This is the blog page.</p>
     <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
 </template>
@@ -20,9 +20,9 @@ export default {
 </script>
 
 <style>
-html{
-  background-color:steelblue;
-}
+  .text-style {
+    color: greenyellow;
+  }
 </style>
 
 <page-query>

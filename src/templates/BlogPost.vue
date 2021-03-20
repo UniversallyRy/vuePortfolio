@@ -2,25 +2,27 @@
   <Layout>
     <article>
       <header>
-      <h2>{{$page.post.title}}</h2>
-      <p>Published on {{$page.post.date}}</p>
+      <h2 class='text-style'>{{$page.post.title}}</h2>
+      <p class='text-style'>Published on {{$page.post.date}}</p>
 
-      <p><i>{{$page.post.timeToRead}}min to read</i></p>
+      <p class='text-style'><i>{{$page.post.timeToRead}}min to read</i></p>
       </header>
 
-      <main class="content" v-html="$page.post.content"></main>
+      <main class="content text-style" v-html="$page.post.content"></main>
     </article>
   </Layout>
 </template>
 
 <style>
-article > header {
-  text-align: center;
-}
-
-.content {
-  margin-top: 48px;
-}
+  article > header {
+    text-align: center;
+  }
+  .text-style {
+      color: greenyellow;
+    }
+  .content {
+    margin-top: 48px;
+  }
 </style>
 
 <page-query>
