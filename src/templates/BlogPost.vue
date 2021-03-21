@@ -6,6 +6,12 @@
       <p class='text-style'>Published on {{$page.post.date}}</p>
 
       <p class='text-style'><i>{{$page.post.timeToRead}}min to read</i></p>
+        <v-btn
+          elevation="3"
+          block
+        >
+          <g-link :to="'blogs'">Back to Blogs</g-link>
+        </v-btn>
       </header>
 
       <main class="content text-style" v-html="$page.post.content"></main>
