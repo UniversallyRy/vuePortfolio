@@ -46,7 +46,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .post-card {
   background-color: steelblue;
   color: steelblue

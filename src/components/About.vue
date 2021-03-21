@@ -3,7 +3,7 @@
       <v-container fluid black >
         <v-row>
           <v-col sm="6">
-            <g-image alt="Example image" src="~/spawn.png" width="400" />
+            <g-image class='picture' alt="Example image" src="~/spawn.png" width="400" />
           </v-col>
           <v-col sm="6">
             <h1> Self Taught</h1>
@@ -22,5 +22,8 @@
   }
   .jsspan {
     color: red;
+  }
+  .picture{
+    margin-left: 200px;
   }
 </style>

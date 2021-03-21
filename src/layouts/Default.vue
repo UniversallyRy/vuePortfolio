@@ -3,6 +3,7 @@
     <v-navigation-drawer
     width="200"
     permanent
+    fixed
     class="nav-drawer"
     color="black"
     >
@@ -74,8 +75,8 @@ query {
 }
 </static-query>
 
-<style>
-  html {
+<style >
+  .v-app {
     scroll-behavior: smooth;
   }
   .v-application--wrap {
@@ -86,10 +87,8 @@ query {
     background-color: #BDBDBD;
   }
   .v-main {
-    flex: 1 0;
+    flex: auto;
     margin-left: 50px;
-  }
-  .nav-drawer{
-    color:black;
+    background-color: blue;
   }
 </style>
