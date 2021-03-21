@@ -20,22 +20,22 @@
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="bottom-bottom"
       >
-        <p class="mb-1 subtitle-1 text-center"
-        >
-            <v-badge
-            :key="skill.name"
-            :value="skill.hover"
-            color="grey darken-3 accent-4"
-            content="Click For More Info"
-            left
-            transition="slide-x-transition"
-            >
-                <v-hover v-model="skill.hover">
-                    <v-icon left :color="skill.color">{{ skill.icon }}</v-icon>
-                    </v-hover>
-            </v-badge>
-          {{ skill.name }}
-        </p>
+        <v-hover v-model="skill.hover">
+          <p class="mb-1 subtitle-1 text-center"
+          >
+              <v-badge
+              :key="skill.name"
+              :value="skill.hover"
+              color="grey darken-3 accent-4"
+              content="Click For More Info"
+              left
+              transition="slide-x-transition"
+              >
+                      <v-icon left :color="skill.color">{{ skill.icon }}</v-icon>
+              </v-badge>
+            {{ skill.name }}
+          </p>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
