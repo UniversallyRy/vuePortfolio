@@ -1,6 +1,6 @@
 <template>
 <v-card
-    class="mx-auto"
+    class="post-card"
     color="red"
     dark
 >
@@ -48,8 +48,7 @@ export default {
 
 <style scoped>
 .post-card {
-  background-color: steelblue;
-  color: steelblue
+  margin-left: 200px;
 }
 .post-list {
   margin-top: 18px;

@@ -18,7 +18,8 @@
     text-align: center;
   }
   .text-style {
-      color: #BDBDBD;
+    margin-left: 200px;
+    color: #BDBDBD;
     }
   .content {
     margin-top: 48px;
