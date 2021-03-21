@@ -22,13 +22,14 @@
       >
       <!-- add href for skills to hover -->
         <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <p class="mb-1 subtitle-1 text-center"
+          <template #activator="{ on: listeners, attrs }">
+            <p 
+              class="mb-1 subtitle-1 text-center"
             >
                   <v-icon 
                     @click="skill.expand=!skill.expand" 
                     left 
-                    v-on="on"
+                    v-on="listeners"
                     v-bind="attrs"
                     :color="skill.color"
                   >
@@ -45,9 +46,8 @@
                 </v-expand-transition>
             </p>
           </template>
-        <span>Click Icon For More Info</span>
-      </v-tooltip>
-          <v-divider></v-divider>
+          <span>Click Icon To Toggle Info</span>
+        </v-tooltip>
       </v-col>
     </v-row>
   </v-container>
@@ -67,7 +67,7 @@ export default {
         {
             name: "HTML",
             icon: "mdi-language-html5",
-            color: "#E44D26",
+            color: "#e34c26",
             hover: false,
             expand: false,
         },
@@ -79,27 +79,27 @@ export default {
         },
         {   name: "ReactJS", 
             icon: "mdi-react", 
-            color: "#f89820", 
+            color: "#61DBFB", 
             hover: false,
             expand: false, 
         },
         {
             name: "React Native",
             icon: "mdi-react",
-            color: "#4CAF50",
+            color: "#61DBFB",
             hover: false,
             expand: false,
         },
         {
             name: "React Redux",
             icon: "mdi-react",
-            color: "#A41E11",
+            color: "#764abc ",
             hover: false,
             expand: false,
         },
         {   name: "NodeJS", 
             icon: "mdi-nodejs", 
-            color: "#BDBDBD", 
+            color: "#3c873a", 
             hover: false,
             expand: false, 
         },
@@ -117,21 +117,21 @@ export default {
         },
         {   name: "Nuxt.js", 
             icon: "mdi-nuxt", 
-            color: "#41B883", 
+            color: "#35495e", 
             hover: false,
             expand: false,
         },
         {
             name: "SQL",
             icon: "mdi-database-search",
-            color: "#80DEEA",
+            color: "#00758f",
             hover: false,
             expand: false,
         },
         {
             name: "Expo",
-            icon: "mdi-airplane-takeoff",
-            color: "#3FA037",
+            icon: "mdi-chevron-up",
+            color: "#000",
             hover: false,
             expand: false,
         },
@@ -145,7 +145,7 @@ export default {
         {
             name: "Bootstrap",
             icon: "mdi-bootstrap",
-            color: "#E44D26",
+            color: "#563d7c",
             hover: false,
             expand: false,
         },
@@ -159,7 +159,7 @@ export default {
         {
             name: "Jest",
             icon: "mdi-ab-testing",
-            color: "#306998",
+            color: "#15c213",
             hover: false,
             expand: false,
         },
