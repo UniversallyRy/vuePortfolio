@@ -21,38 +21,33 @@
         data-aos-anchor-placement="bottom-bottom"
       >
       <!-- add href for skills to hover -->
-        <v-hover v-model="skill.hover">
-          <p class="mb-1 subtitle-1 text-center"
-          >
-          
-              <v-badge
-              :key="skill.name"
-              :value="skill.hover"
-              color="grey darken-3 accent-4"
-              content="Click Icon For More Info"
-              left
-              transition="slide-x-transition"
-              >
-                <v-icon 
-                  @click="skill.expand=!skill.expand" 
-                  left 
-                  :color="skill.color"
-                >
-                  {{ skill.icon }}
-                </v-icon>
-              </v-badge>
-              {{ skill.name }}
-              <v-expand-transition>
-                <v-card
-                  v-show="skill.expand"
-                  height="100"
-                  width="100"
-                  class="mx-auto secondary"
-                ></v-card>
-              </v-expand-transition>
-            
-          </p>
-        </v-hover>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <p class="mb-1 subtitle-1 text-center"
+            >
+                  <v-icon 
+                    @click="skill.expand=!skill.expand" 
+                    left 
+                    v-on="on"
+                    v-bind="attrs"
+                    :color="skill.color"
+                  >
+                    {{ skill.icon }}
+                  </v-icon>
+                {{ skill.name }}
+                <v-expand-transition>
+                  <v-card
+                    v-show="skill.expand"
+                    height="100"
+                    width="100"
+                    class="mx-auto secondary"
+                  ></v-card>
+                </v-expand-transition>
+            </p>
+          </template>
+        <span>Click Icon For More Info</span>
+      </v-tooltip>
+          <v-divider></v-divider>
       </v-col>
     </v-row>
   </v-container>
@@ -63,11 +58,11 @@ export default {
   data: () => ({
     skills: [
         {
-          name: "JavaScript",
-          icon: "mdi-language-javascript",
-          color: "#F0DB4F",
-          hover: false,
-          expand: false,
+            name: "JavaScript",
+            icon: "mdi-language-javascript",
+            color: "#F0DB4F",
+            hover: false,
+            expand: false,
         },
         {
             name: "HTML",
