@@ -1,5 +1,3 @@
-// todos: better spacing, more projects, color scheme, more components, diagonal header, spawn theme
-
 <template>
   <Layout>
     <About/>
@@ -10,8 +8,8 @@
 </template>
 
 <script>
-// todos: add blog page, add blog entries, decide if blog will be priv/publ
-// style page(spawn/cyberpunk colors?), add more components and optimize code and site speed
+// todos: decide if blog will be priv/publ, diagonal header, better spacing, more projects
+// style page(spawn/cool tone colors?), add more components and optimize code and site speed
 import About from "@/components/About.vue"
 import Skills from "@/components/Skills.vue"
 import Projects from "@/components/Projects.vue"
