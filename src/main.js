@@ -4,6 +4,7 @@ import "vuetify/dist/vuetify.min.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { appOptions, head }) {
+  head.htmlAttrs = { lang: "en" };
   head.link.push({
     rel: "stylesheet",
     href:

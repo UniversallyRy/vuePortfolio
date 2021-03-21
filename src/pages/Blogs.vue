@@ -2,7 +2,10 @@
   <Layout>
     <h1 class='text-style'>Blogs</h1>
     <p class='text-style'>This is the blog page.</p>
-    <BlogPostList :posts="$page.posts.edges"/>
+    <BlogPostList 
+      :posts="$page.posts.edges"
+      :key="edge.node.id"
+    />
   </Layout>
 </template>
 

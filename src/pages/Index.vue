@@ -18,7 +18,7 @@ import Projects from "@/components/Projects.vue"
 import Contact from "@/components/Contact.vue"
 export default {
   metaInfo: {
-    title: "Ryan Paige's Portfolio"
+    title: "UniversallyRy's Portfolio"
   },
   components: {
     About,
