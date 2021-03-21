@@ -56,8 +56,8 @@
       return {
         items: [
           { title: "About", icon: "mdi-account-circle-outline" },
+          { title: "Skills", icon: "mdi-post-outline" },
           { title: "Projects", icon: "mdi-folder-table-outline" },
-          { title: "Blogs", icon: "mdi-post-outline" },
           { title: "Contact", icon: "mdi-card-account-phone-outline" },
         ],
         right: null,
@@ -83,7 +83,7 @@ query {
     background-color: black;
   }
   .v-list-item {
-    background-color:greenyellow;
+    background-color: #BDBDBD;
   }
   .v-main {
     flex: 1 0;

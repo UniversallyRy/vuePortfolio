@@ -21,7 +21,7 @@ export default {
 
 <style>
   .text-style {
-    color: greenyellow;
+    color: #BDBDBD;
   }
 </style>
 

@@ -18,7 +18,7 @@
     text-align: center;
   }
   .text-style {
-      color: greenyellow;
+      color: #BDBDBD;
     }
   .content {
     margin-top: 48px;

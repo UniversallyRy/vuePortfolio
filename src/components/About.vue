@@ -1,6 +1,6 @@
 <template>
     <section id = "about" class="d-flex">
-      <v-container>
+      <v-container fluid black >
         <v-row>
           <v-col sm="6">
             <g-image alt="Example image" src="~/spawn.png" width="400" />
@@ -18,7 +18,7 @@
 <style>
   .bio-paragraph {
     margin-top: 30px;
-    color: greenyellow
+    color: #BDBDBD
   }
   .jsspan {
     color: red;
