@@ -20,6 +20,7 @@
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="bottom-bottom"
       >
+      <!-- add href for skills to hover -->
         <v-hover v-model="skill.hover">
           <p class="mb-1 subtitle-1 text-center"
           >
