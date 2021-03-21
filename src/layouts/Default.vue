@@ -88,7 +88,6 @@ query {
   }
   .v-main {
     flex: auto;
-    margin-left: 50px;
-    background-color: blue;
+    margin-left: 11vw;
   }
 </style>

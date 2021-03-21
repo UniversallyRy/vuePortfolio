@@ -1,8 +1,8 @@
 <template>
-  <Layout>
-    <h1 class='text-style'>Blogs</h1>
-    <p class='text-style'>This is the blog page.</p>
-    <BlogPostList :posts="$page.posts.edges"/>
+  <Layout id='page'>
+      <h1 class='text-style'>Blogs</h1>
+      <p class='text-style'>This is the blog page.</p>
+      <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
 </template>
 
@@ -15,13 +15,14 @@ export default {
   },
   components: {
     BlogPostList
-  }
+  }, 
 }
 </script>
 
-<style scoped>
-html{
-  margin-left: 200px;
+<style>
+  #page {
+    background-color: red;
+    color: green
 }
   .text-style {
     color: #BDBDBD;
