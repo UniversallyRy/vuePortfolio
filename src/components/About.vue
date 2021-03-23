@@ -6,8 +6,8 @@
             <g-image class='picture' alt="Example image" src="~/spawn.png" width="400" />
           </v-col>
           <v-col sm="6">
-            <h1> Self Taught</h1>
-            <h1> <span class="jsspan">Javascript</span> Web Developer </h1>
+            <h1 class="title"> Self Taught</h1>
+            <h1 class="title"> <span class="jsspan">Javascript</span> Web Developer </h1>
             <p class="bio-paragraph"> Hello, My name is Ryan and I am a self-taught Javscript developer. </p>
           </v-col>
         </v-row>
@@ -16,9 +16,12 @@
 </template>
 
 <style>
+.title{
+  color: #BDBDBD;
+}
   .bio-paragraph {
     margin-top: 30px;
-    color: #BDBDBD
+    color: #BDBDBD;
   }
   .jsspan {
     color: red;

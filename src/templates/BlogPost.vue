@@ -14,7 +14,7 @@
         </v-btn>
       </header>
 
-      <main class="content text-style" v-html="$page.post.content"></main>
+      <main key="$page.post.id" class="content text-style" v-html="$page.post.content"></main>
     </article>
   </Layout>
 </template>
