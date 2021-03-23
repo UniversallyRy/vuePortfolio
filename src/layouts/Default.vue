@@ -5,10 +5,25 @@
       clipped-left
       dense
       color="red"
-      dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Ryan Paige</v-toolbar-title>
+      <v-row>
+        <v-col class="d-flex justify-space-around" sm="2" offset-sm="10">
+          <v-icon></v-icon>
+          <a 
+            v-for="link in links"
+            v-bind:href="link.url"
+            v-bind:key="link.name"
+          >
+            <img 
+              :key="link.name"
+              class="contact-icon" 
+              :src="link.image"
+            />
+          </a>
+        </v-col>    
+      </v-row>
     </v-app-bar>
     <v-navigation-drawer color="black" v-model="drawer" app clipped>
         <v-list
@@ -45,8 +60,30 @@
           { title: "About", icon: "mdi-account-circle-outline" },
           { title: "Skills", icon: "mdi-post-outline" },
           { title: "Projects", icon: "mdi-folder-table-outline" },
-          { title: "Contact", icon: "mdi-card-account-phone-outline" },
         ],
+        links: [
+                    {
+                        name:"Github",
+                        url: "https://github.com/UniversallyRy",
+                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
+                    },
+                    {
+                        name:"Twitter",
+                        url: "https://twitter.com/UniversallyRy",
+                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+                    },
+                    {
+                        name:"Instagram",
+                        url: "https://instagram.com/UniversallyRy",
+                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+                    },
+                    {
+                        name:"LinkedIn",
+                        url: "https://linkedin.com/",
+                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+                    },
+                    
+                ],
         right: null,
         drawer: false,
       }
@@ -76,4 +113,8 @@ query {
   .v-main {
     flex: auto;
   }
+  .contact-icon {
+        height: 30px;
+        width: 30px;
+    }
 </style>
