@@ -62,28 +62,27 @@
           { title: "Projects", icon: "mdi-folder-table-outline" },
         ],
         links: [
-                    {
-                        name:"Github",
-                        url: "https://github.com/UniversallyRy",
-                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
-                    },
-                    {
-                        name:"Twitter",
-                        url: "https://twitter.com/UniversallyRy",
-                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
-                    },
-                    {
-                        name:"Instagram",
-                        url: "https://instagram.com/UniversallyRy",
-                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
-                    },
-                    {
-                        name:"LinkedIn",
-                        url: "https://linkedin.com/",
-                        image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
-                    },
-                    
-                ],
+          {
+            name:"Github",
+            url: "https://github.com/UniversallyRy",
+            image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
+          },
+          {
+            name:"Twitter",
+            url: "https://twitter.com/UniversallyRy",
+            image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
+          },
+          {
+            name:"Instagram",
+              url: "https://instagram.com/UniversallyRy",
+              image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
+          },
+          {
+              name:"LinkedIn",
+              url: "https://linkedin.com/",
+              image: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+          },
+        ],
         right: null,
         drawer: false,
       }

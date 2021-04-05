@@ -8,6 +8,7 @@
             </v-row>
             <v-row class=" justify-space-around mb-7 mt-4">
                     <v-card
+                        class="demo"
                         v-for="project in projects"
                         :key="project.name"
                         max-width="300"
@@ -46,25 +47,31 @@ export default {
                 {
                     name:"NBA App",
                     github:"https://github.com/UniversallyRy/scoreChecker",
-                    description: "A NBA App created with React.",
+                    description: "An NBA App created with React Native.",
                     image: "https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/sScoreCard.gif"
+                },
+                {
+                    name:"Affirmation Board",
+                    github:"https://github.com/UniversallyRy/rnvisionsdreamsideas",
+                    description: "An affirmation app created with React Native.",
+                    image: "https://raw.githubusercontent.com/UniversallyRy/rnvisionsdreamsideas/main/demo/visions.gif"
                 },
                 {
                     name:"Todo App",
                     github:"https://github.com/UniversallyRy/reacttodo",
-                    description: "A Todo App created with React.",
+                    description: "A Todo App created with ReactJS.",
                     image: "https://user-images.githubusercontent.com/24601662/109756755-7f9a1200-7bb6-11eb-9f66-177307887582.png"
                 },
                 {
                     name:"Pomodoro App",
                     github:"https://github.com/UniversallyRy/pomov2",
-                    description: "Pomodoro App Created with React.",
+                    description: "Pomodoro App Created with ReactJS.",
                     image: ""
                 },
                 {
-                    name:"Tac Toe App",
+                    name:"Tic Tac Toe App",
                     github:"https://github.com/UniversallyRy/reacttactoe",
-                    description: "A Tic Tac Toe game created with React",
+                    description: "A Tic Tac Toe game created with ReactJS",
                     image: "https://user-images.githubusercontent.com/24601662/109756347-c63b3c80-7bb5-11eb-90c1-ff6ff5b19166.png"
                 },
                 
@@ -89,5 +96,8 @@ export default {
     }
     .v-image {
         border: 1px solid #242331;
+    }
+    .demo{
+        margin-bottom: 15px;
     }
 </style>
