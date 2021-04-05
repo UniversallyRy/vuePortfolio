@@ -115,5 +115,6 @@ query {
   .contact-icon {
         height: 30px;
         width: 30px;
+        margin: 2px;
     }
 </style>
