@@ -3,7 +3,7 @@
       <v-container fluid black >
         <v-row>
           <v-col sm="6">
-            <g-image class='picture' alt="Example image" src="~/spawn.png" width="400" />
+            <g-image class='picture' alt="Spawn Logo" src="~/spawn.png" width="300" />
           </v-col>
           <v-col sm="6">
             <h1 class="title"> Self Taught</h1>
@@ -27,6 +27,6 @@
     color: red;
   }
   .picture{
-    margin-left: 200px;
+    margin-left: 50px;
   }
 </style>
