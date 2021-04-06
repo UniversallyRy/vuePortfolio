@@ -3,7 +3,6 @@
     <About/>
     <Skills/>
     <Projects/>
-    <Contact/>
   </Layout>
 </template>
 
@@ -14,6 +13,7 @@
 import About from "@/components/About.vue"
 import Skills from "@/components/Skills.vue"
 import Projects from "@/components/Projects.vue"
+import Blogs from "@/components/BlogPostList.vue"
 export default {
   metaInfo: {
     title: "UniversallyRy's Portfolio"
@@ -22,6 +22,7 @@ export default {
     About,
     Skills,
     Projects,
+    Blogs,
   }
 }
 </script>

@@ -14,7 +14,7 @@
 
 </script>
 
-<style scoped>
+<style>
 
   center {
     margin: 15vw;

@@ -1,8 +1,13 @@
 <template>
-  <Layout id='page'>
+  <Layout >
+    <v-banner class='header'>
       <h1 class='text-style'>Blogs</h1>
       <p class='text-style'>This is the blog page.</p>
-      <BlogPostList :posts="$page.posts.edges"/>
+      <v-btn>
+        <g-link :to="'/'">Back Home</g-link>
+      </v-btn>
+    </v-banner>
+    <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
 </template>
 
@@ -20,12 +25,17 @@ export default {
 </script>
 
 <style>
-  #page {
-    background-color: red;
-    color: green
-}
+  a {
+      text-decoration: none;
+  }
+  .header {
+    align-self: center;
+    margin: 10px;
+  }
   .text-style {
     color: #BDBDBD;
+    align-self: center;
+    margin: 5px;
   }
 </style>
 

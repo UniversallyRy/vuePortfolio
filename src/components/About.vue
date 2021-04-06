@@ -15,7 +15,7 @@
     </section>
 </template>
 
-<style >
+<style>
 .title{
   color: #BDBDBD;
 }

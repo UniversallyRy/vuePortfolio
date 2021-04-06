@@ -90,7 +90,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     .project-section {
         background-color: #242331;
     }

@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar
+    <v-app-bar     
+      v-if="$route.name == 'home'"
       app
       clipped-left
       dense
@@ -44,6 +45,19 @@
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          <v-list-item
+            :key="blog[0].title"
+            link
+            :to="`${blog[0].title.toLowerCase()}`"
+          >
+            <v-list-item-icon>
+              <v-icon>{{ blog[0].icon }}</v-icon>
+            </v-list-item-icon>
+  
+            <v-list-item-content>
+              <v-list-item-title>{{ blog[0].title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-navigation-drawer>
     <v-main>
@@ -54,12 +68,17 @@
 
 <script>
   export default {
+    
     data () {
       return {
+        name: 'My Portfolio',
         items: [
           { title: "About", icon: "mdi-account-circle-outline" },
-          { title: "Skills", icon: "mdi-post-outline" },
+          { title: "Skills", icon: "mdi-diamond-outline" },
           { title: "Projects", icon: "mdi-folder-table-outline" },
+        ],
+        blog: [
+          { title: "Blogs", icon: "mdi-blogger" },
         ],
         links: [
           {
@@ -98,7 +117,7 @@ query {
 }
 </static-query>
 
-<style >
+<style>
   .v-app {
     scroll-behavior: smooth;
   }

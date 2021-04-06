@@ -19,7 +19,7 @@
   </Layout>
 </template>
 
-<style scoped>
+<style>
   article > header {
     text-align: center;
   }
