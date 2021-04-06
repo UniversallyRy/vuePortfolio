@@ -13,8 +13,13 @@
       <v-spacer></v-spacer>
         <v-text-field
           hide-details
+          label="Search for Blogs"
+          placeholder="Search"
           prepend-inner-icon="mdi-magnify"
           single-line
+          rounded
+          filled
+          dense
           clearable
           class="shrink"
           style="margin:10px"

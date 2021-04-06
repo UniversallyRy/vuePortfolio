@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <v-card-actions class="justify-left">
-        <v-btn icon color="red" :to="'/blogs'">
+        <v-btn style="margin:10px" icon color="red" :to="'/blogs'">
           <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
       </v-card-actions>
