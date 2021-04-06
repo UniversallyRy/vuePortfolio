@@ -1,12 +1,14 @@
 <template>
   <Layout >
-    <v-banner class='header'>
-      <h1 class='text-style'>Blogs</h1>
-      <p class='text-style'>This is the blog page.</p>
-      <v-btn>
-        <g-link :to="'/'">Back Home</g-link>
-      </v-btn>
-    </v-banner>
+    <v-card outlined color="transparent" class='header'>
+      <v-card-actions class="justify-left">
+        <v-btn icon color="red" :to="'/'">
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+      </v-card-actions>
+      <v-card-title class='text-style justify-center'>Blogs</v-card-title>
+      <p class='text-style text-center'>This is the blog page.</p>
+    </v-card>
     <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
 </template>
@@ -24,17 +26,17 @@ export default {
 }
 </script>
 
-<style>
+<style >
   a {
       text-decoration: none;
   }
   .header {
-    align-self: center;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
   }
   .text-style {
     color: #BDBDBD;
-    align-self: center;
     margin: 5px;
   }
 </style>

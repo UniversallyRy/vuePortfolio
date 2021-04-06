@@ -1,20 +1,17 @@
 <template>
   <Layout>
+    <v-card-actions class="justify-left">
+        <v-btn icon color="red" :to="'/blogs'">
+          <v-icon>mdi-arrow-left</v-icon>
+        </v-btn>
+      </v-card-actions>
     <article>
       <header>
-      <h2 class='text-style'>{{$page.post.title}}</h2>
-      <p class='text-style'>Published on {{$page.post.date}}</p>
-
+      <p class='text-style text-center'>Published on {{$page.post.date}}</p>
       <p class='text-style'><i>{{$page.post.timeToRead}}min to read</i></p>
-        <v-btn
-          elevation="3"
-          block
-        >
-          <g-link :to="'blogs'">Back to Blogs</g-link>
-        </v-btn>
       </header>
 
-      <main key="$page.post.id" class="content text-style" v-html="$page.post.content"></main>
+      <main key="$page.post.id" class="content text-style text-center" v-html="$page.post.content"></main>
     </article>
   </Layout>
 </template>
@@ -23,8 +20,10 @@
   article > header {
     text-align: center;
   }
+  a {
+      text-decoration: none;
+  }
   .text-style {
-    margin-left: 200px;
     color: #BDBDBD;
     }
   .content {
