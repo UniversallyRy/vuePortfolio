@@ -36,15 +36,14 @@
             </v-btn>
           </template>
           <v-card>
-            <v-list dense>
-              <v-subheader>Categories</v-subheader>
-              <v-divider></v-divider>
+            <v-list dark>
               <v-list-item
-                v-for="notification in notifications"
-                :key="`notification-key-${notification.id}`"
+                dense
+                v-for="category in categories"
+                :key="`notification-key-${category.id}`"  
               >
                 <v-list-item-title>
-                  {{ notification.title }}
+                  {{ category.title }}
                 </v-list-item-title>
               </v-list-item>
             </v-list>
@@ -81,7 +80,7 @@ export default {
   props: ['posts'],
   data () {
       return {
-        notifications: [
+        categories: [
               { id: 1, title: 'Programming' },
               { id: 2, title: 'Books' },
               { id: 3, title: 'Visions' },
