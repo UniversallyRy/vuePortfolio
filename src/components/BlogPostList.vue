@@ -25,26 +25,28 @@
           style="margin:10px"
         ></v-text-field>
         <v-menu offset-y>
-          <template v-slot:activator="{on}">
+          <template v-slot:activator="{on, attrs}">
             <v-btn
               dark
               v-on="on"
+              v-bind="attrs"
               style="margin:2px"
             >
+              Categories
             </v-btn>
           </template>
           <v-card>
             <v-list dense>
-              <v-subheader>Notifications</v-subheader>
+              <v-subheader>Categories</v-subheader>
               <v-divider></v-divider>
-              <v-list-tile
+              <v-list-item
                 v-for="notification in notifications"
                 :key="`notification-key-${notification.id}`"
               >
-                <v-list-tile-title>
+                <v-list-item-title>
                   {{ notification.title }}
-                </v-list-tile-title>
-              </v-list-tile>
+                </v-list-item-title>
+              </v-list-item>
             </v-list>
           </v-card>
         </v-menu>
@@ -77,12 +79,16 @@
 <script>
 export default {
   props: ['posts'],
-  notifications: [
-        { id: 1, title: 'Click Me' },
-        { id: 2, title: 'Click Me' },
-        { id: 3, title: 'Click Me' },
-        { id: 4, title: 'Click Me 2' }
-      ],
+  data () {
+      return {
+        notifications: [
+              { id: 1, title: 'Programming' },
+              { id: 2, title: 'Books' },
+              { id: 3, title: 'Visions' },
+              { id: 4, title: 'Thoughts' }
+            ],
+      }
+  }
 }
 </script>
 
