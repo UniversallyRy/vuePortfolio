@@ -1,7 +1,7 @@
 // v2.0
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
-import DefaultLayout from "~/layouts/Default.vue";
+import Layout from "~/layouts/Default.vue";
 
 export default function(Vue, { appOptions, head }) {
   head.htmlAttrs = { lang: "en" };
@@ -23,5 +23,5 @@ export default function(Vue, { appOptions, head }) {
   appOptions.vuetify = new Vuetify(opts);
 
   // Set default layout as a global component
-  Vue.component("Layout", DefaultLayout);
+  Vue.component("Layout", Layout);
 }

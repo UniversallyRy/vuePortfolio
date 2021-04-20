@@ -10,7 +10,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
-    "vue-horizontal-scroll": "^0.2.4",
+    "vue-scroll-snap": "^0.1.10",
     "vuetify": "^2.4.5"
   },
   "devDependencies": {
