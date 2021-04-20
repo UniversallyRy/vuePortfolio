@@ -1,8 +1,10 @@
 <template>
   <Layout>
+        <horizontal-scroll>
     <About/>
     <Skills/>
     <Projects/>
+          </horizontal-scroll>
   </Layout>
 </template>
 
@@ -10,6 +12,8 @@
 // todos: decide if blog will be priv/publ, diagonal header, better spacing, more projects
 // style page(spawn/cool tone colors?), add more components and optimize code and site speed
 // Dream Journal Component needed, blog categories
+import HorizontalScroll from 'vue-horizontal-scroll'
+import 'vue-horizontal-scroll/dist/vue-horizontal-scroll.css'
 import About from "@/components/About.vue"
 import Skills from "@/components/Skills.vue"
 import Projects from "@/components/Projects.vue"
@@ -23,6 +27,7 @@ export default {
     Skills,
     Projects,
     Blogs,
+    HorizontalScroll
   }
 }
 </script>
