@@ -24,12 +24,13 @@
                     >
                         <v-card
                             class="demo ma-3"
-                            max-width="500"
-                            max-height="600"
+                            min-width="200"
+                            min-height="400"
                         >
                             <v-img
                                 class="white--text align-end"
                                 height="550"
+                                max-width="400"
                                 :src="project.image"
                             >
                                 <v-card-title>{{ project.name }}</v-card-title>
@@ -116,6 +117,6 @@ export default {
         margin-bottom: 15px;
     }
     .v-sheet {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 </style>
