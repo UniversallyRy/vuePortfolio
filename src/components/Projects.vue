@@ -1,40 +1,55 @@
 <template>
     <section id="projects" class="project-section">
         <v-container>
-            <v-row>
+            <v-row class="margin:50">
                 <v-col>
                     <h1>Projects</h1>
                 </v-col>
             </v-row>
-            <v-row class=" justify-space-around mb-7 mt-4">
-                    <v-card
-                        class="demo"
+            <v-sheet
+                dark
+                class="mx-auto allProjects"
+                elevation="8"
+                max-width="1000"
+            >
+                <v-slide-group
+                    v-model="model"
+                    class="pa-4"
+                    active-class="success"
+                    show-arrows
+                >
+                    <v-slide-item
                         v-for="project in projects"
                         :key="project.name"
-                        max-width="300"
                     >
-                        <v-img
-                        class="white--text align-end"
-                        height="450px"
-                        :src="project.image"
+                        <v-card
+                            class="demo ma-4"
+                            max-width="500"
+                            max-height="600"
                         >
-                        <v-card-title>{{ project.name }}</v-card-title>
-                        </v-img>
-                        <v-card-text class="text--primary">
-                            {{ truncate(project.description) }}
-                        </v-card-text>
-
-                        <v-card-actions>
-                        <v-btn
-                            color="#242331"
-                            text
-                            :href="project.github"
-                        >
-                            See Code
-                        </v-btn>
-                        </v-card-actions>
-                    </v-card>
-            </v-row>
+                            <v-img
+                                class="white--text align-end"
+                                height="450"
+                                :src="project.image"
+                            >
+                                <v-card-title>{{ project.name }}</v-card-title>
+                            </v-img>
+                            <v-card-text class="text--primary">
+                                {{ truncate(project.description) }}
+                            </v-card-text>
+                            <v-card-actions>
+                                <v-btn
+                                    color="red"
+                                    text
+                                    :href="project.github"
+                                >
+                                    See Code
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-slide-item>
+                </v-slide-group>
+            </v-sheet>
         </v-container>
     </section>
 </template>
@@ -99,5 +114,8 @@ export default {
     }
     .demo{
         margin-bottom: 15px;
+    }
+    .v-sheet {
+        margin-top: 50px;
     }
 </style>
