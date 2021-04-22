@@ -1,7 +1,7 @@
 <template>
     <section id="projects" class="project-section">
         <v-container>
-            <v-row class="margin:50">
+            <v-row>
                 <v-col>
                     <h1>Projects</h1>
                 </v-col>
@@ -10,11 +10,11 @@
                 dark
                 class="mx-auto allProjects"
                 elevation="8"
-                max-width="1000"
+                min-width="400"
             >
                 <v-slide-group
                     v-model="model"
-                    class="pa-4"
+                    class="pa-13"
                     active-class="success"
                     show-arrows
                 >
@@ -23,13 +23,13 @@
                         :key="project.name"
                     >
                         <v-card
-                            class="demo ma-4"
+                            class="demo ma-3"
                             max-width="500"
                             max-height="600"
                         >
                             <v-img
                                 class="white--text align-end"
-                                height="450"
+                                height="550"
                                 :src="project.image"
                             >
                                 <v-card-title>{{ project.name }}</v-card-title>
