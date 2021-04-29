@@ -11,7 +11,7 @@
 <script>
 // todos: decide if blog will be priv/publ, diagonal header, better spacing, more projects
 // style page(cool tone colors?), add more components and optimize code and site speed
-// Dream Journal Component needed, blog categories, taglike corners for sections
+// Dream Journal Component needed, blog categories, taglike corners for sections, fix vert scroll
   import VueScrollSnap from "vue-scroll-snap";
   import About from "@/components/About.vue"
   import Skills from "@/components/Skills.vue"
