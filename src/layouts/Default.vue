@@ -130,8 +130,8 @@ query {
     background-color: #BDBDBD;
   }
   .contact-icon {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     margin: 2px;
   } 
 
