@@ -6,8 +6,8 @@
           <v-icon>mdi-home</v-icon>
         </v-btn>
       </v-card-actions>
-      <v-card-title class='text-style justify-center'>Blogs</v-card-title>
-      <p class='text-style text-center'>This is the blog page.</p>
+      <v-card-title class='text-style justify-center'>My Blogs</v-card-title>
+      <p class='text-style text-center'>My blogs about a number of different topics, ranging from programming to books.</p>
     </v-card>
     <BlogPostList :posts="$page.posts.edges"/>
   </Layout>
