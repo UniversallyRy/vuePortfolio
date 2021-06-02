@@ -88,7 +88,7 @@ export default {
                     name:"Tic Tac Toe App",
                     github:"https://github.com/UniversallyRy/reacttactoe",
                     description: "A Tic Tac Toe game created with ReactJS",
-                    image: "https://user-images.githubusercontent.com/24601662/109756347-c63b3c80-7bb5-11eb-90c1-ff6ff5b19166.png"
+                    image: "https://i.postimg.cc/tTrv6qfj/reactacttoescreenshot.png"
                 },
                 
             ]
