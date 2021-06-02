@@ -103,9 +103,10 @@ export default {
 .post-title {
   font-size: 24px;
   border-style: solid;
-  border-width: 0.5px;
+  border-width: 2px;
+  border-color: black;
+  margin-bottom: 5px;
   padding: 10px;
-  margin: 5px;
 }
 .post {
   padding: 12px 0;

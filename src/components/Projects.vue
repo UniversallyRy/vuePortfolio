@@ -3,7 +3,7 @@
         <v-container>
             <v-row>
                 <v-col>
-                    <h1>Projects</h1>
+                    <h1 class="red--text">Projects</h1>
                 </v-col>
             </v-row>
             <v-sheet
