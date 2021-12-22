@@ -61,10 +61,10 @@ export default {
         return {
             projects: [
                 {
-                    name:"NBA App",
+                    name:"NBA Score Checker",
                     github:"https://github.com/UniversallyRy/scoreChecker",
-                    description: "An NBA App created with React Native.",
-                    image: "https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/sScoreCard.gif"
+                    description: "Score checking app created with React Native.",
+                    image: "https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/dateChange.gif"
                 },
                 {
                     name:"Affirmation Board",
@@ -75,19 +75,19 @@ export default {
                 {
                     name:"Todo App",
                     github:"https://github.com/UniversallyRy/reacttodo",
-                    description: "A Todo App created with ReactJS.",
+                    description: "A Todo App created with React.",
                     image: "https://user-images.githubusercontent.com/24601662/109756755-7f9a1200-7bb6-11eb-9f66-177307887582.png"
                 },
                 {
                     name:"Pomodoro App",
                     github:"https://github.com/UniversallyRy/pomov2",
-                    description: "Pomodoro App Created with ReactJS.",
+                    description: "Pomodoro App Created with React.",
                     image: ""
                 },
                 {
                     name:"Tic Tac Toe App",
                     github:"https://github.com/UniversallyRy/reacttactoe",
-                    description: "A Tic Tac Toe game created with ReactJS",
+                    description: "A Tic Tac Toe game created with React",
                     image: "https://i.postimg.cc/tTrv6qfj/reactacttoescreenshot.png"
                 },
                 
