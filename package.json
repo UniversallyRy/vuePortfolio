@@ -9,11 +9,11 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
-    "gridsome": "^0.7.0",
-    "vuetify": "^2.4.5"
+    "gridsome": "^0.7.23",
+    "vuetify": "^2.6.1"
   },
   "devDependencies": {
-    "@mdi/font": "^5.9.55",
-    "webpack-node-externals": "^2.5.2"
+    "@mdi/font": "^6.5.95",
+    "webpack-node-externals": "^3.0.0"
   }
 }

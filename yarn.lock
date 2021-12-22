@@ -1006,10 +1006,10 @@
     log-update "^2.3.0"
     p-map "^1.2.0"
 
-"@mdi/font@^5.9.55":
-  version "5.9.55"
-  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-5.9.55.tgz#41acd50b88073ded7095fc3029d8712b6e12f38e"
-  integrity sha512-jswRF6q3eq8NWpWiqct6q+6Fg/I7nUhrxYJfiEM8JJpap0wVJLQdbKtyS65GdlK7S7Ytnx3TTi/bmw+tBhkGmg==
+"@mdi/font@^6.5.95":
+  version "6.5.95"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.5.95.tgz#203922f6dd46397de9eb1f5956b85339adb6344d"
+  integrity sha512-ES5rj6J39FUkHe/b3C9SJs8bqIungYhuU7rBINTBaHOv/Ce4RCb3Gw08CZVl32W33UEkgRkzyWaIedV4at+QHg==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -4394,7 +4394,7 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome@^0.7.0:
+gridsome@^0.7.23:
   version "0.7.23"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.23.tgz#d8b06bdf6b4ed06411be3ec3696324f29c83063e"
   integrity sha512-2/koBt4YWoTKRQR+7Gy84EHbNTa9y6JgRjBO84wOpZjEWglwxDh0cFAq8QbhHnf13mXbJVRm5aHBESO5iD5BcA==
@@ -9459,7 +9459,7 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
-vuetify@^2.4.5:
+vuetify@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.6.1.tgz#5cdd26c51980618b0b92625a2829cd4956813eaa"
   integrity sha512-WtqarqEIJlhiwl1TShtkq58xtfbHpn4BjkuQtsL7mAs2eHCo7QjA3tUm7Dx/NmDc4wa2ghUUth36jTdG+CCWRg==
@@ -9533,10 +9533,10 @@ webpack-merge@^4.2.1:
   dependencies:
     lodash "^4.17.15"
 
-webpack-node-externals@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-2.5.2.tgz#178e017a24fec6015bc9e672c77958a6afac861d"
-  integrity sha512-aHdl/y2N7PW2Sx7K+r3AxpJO+aDMcYzMQd60Qxefq3+EwhewSbTBqNumOsCE1JsCUNoyfGj5465N0sSf6hc/5w==
+webpack-node-externals@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz#1a3407c158d547a9feb4229a9e3385b7b60c9917"
+  integrity sha512-LnL6Z3GGDPht/AigwRh2dvL9PQPFQ8skEpVrWZXLWBYmqcaojHNN0onvHzie6rq7EWKrrBfPYqNEzTJgiwEQDQ==
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
