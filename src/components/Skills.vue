@@ -8,7 +8,6 @@
     <h2 class="display-2 mt-9 mb-3 font-weight-bold red--text">Skills</h2>
     <v-divider class="mb-9" />
 
-    <p class="text-center title black--text">Known Technologies</p>
     <v-row class="px-4">
       <v-col
         v-for="skill in skills"
