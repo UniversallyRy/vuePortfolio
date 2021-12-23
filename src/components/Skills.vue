@@ -26,7 +26,6 @@
               class="mb-1 subtitle-1 text-center"
             >
               <v-icon 
-                @click="skill.expand=!skill.expand" 
                 left 
                 v-on="listeners"
                 v-bind="attrs"
@@ -35,17 +34,9 @@
                 {{ skill.icon }}
               </v-icon>
               {{ skill.name }}
-              <v-expand-transition>
-                <v-card
-                  v-show="skill.expand"
-                  height="100"
-                  width="100"
-                  class="mx-auto secondary"
-                ></v-card>
-              </v-expand-transition>
             </p>
           </template>
-          <span>Click Icon To Toggle Info</span>
+          <span>{{skill.info}}</span>
         </v-tooltip>
       </v-col>
     </v-row>
@@ -61,147 +52,147 @@ export default {
         icon: "mdi-language-javascript",
         color: "#F0DB4F",
         hover: false,
-        expand: false,
+        info: 'Programming language used in web development, web apps, and a lot more. Allows dynamic features on websites that cannot be done with just HTML and CSS.'
       },
       {
         name: "HTML",
         icon: "mdi-language-html5",
         color: "#e34c26",
         hover: false,
-        expand: false,
+        info: 'HyperText Markup Language, standardized system for tagging text files to make font, color, graphic and hyperlink effects on websites.'
       },
       {   
         name: "CSS", 
         icon: "mdi-language-css3",
         color: "#2965f1", 
         hover: false,
-        expand: false, 
+        info: 'Cascading Style Sheet, used to format the layout and other visual aspects of websites.'
       },
       {   
         name: "React", 
         icon: "mdi-react", 
         color: "#61DBFB", 
         hover: false,
-        expand: false, 
+        info: 'JavaScript library specializing in helping create user interfaces and other interactive elements.'
       },
       {
         name: "React Native",
         icon: "mdi-react",
         color: "#61DBFB",
         hover: false,
-        expand: false,
+        info: 'Allows developers to build mobile apps with React.'
       },
       {
-        name: "React Redux",
+        name: "Redux Toolkit",
         icon: "mdi-react",
         color: "#764abc ",
         hover: false,
-        expand: false,
+        info: 'React library and utilities for storing data state and reducers.'
       },
       {
         name: "TypeScript",
         icon: "mdi-language-typescript",
         color: "#719af4",
         hover: false,
-        expand: false,
+        info: 'JavaScript extension that adds types to the language. Supports tighter integration into code editors, catching errors and providing fixes.'
       },
       {   
         name: "Vue.js", 
         icon: "mdi-vuejs", 
         color: "#41B883", 
         hover: false,
-        expand: false, 
+        info: 'JavaScript framework for building user interfaces and single-page applications.'
       },
       {   
         name: "Vuetify", 
         icon: "mdi-vuetify", 
         color: "#42A5F5", 
         hover: false,
-        expand: false,
+        info: 'Complete UI framework built on top of Vue.js. Provides mobile-first support, making page components work correctly whether on a phone, tablet, or desktop computer.'
       },
       {
         name: "Native-base",
         icon: "mdi-palette",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'Component library built on top of React Native, allows developers to build universal designs.'
       },
       {
         name: "Chakra-UI",
         icon: "mdi-palette",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'Simple, modular and accesible component library, provides building blocks for React apps.'
       },
       {
         name: "styled-components",
         icon: "mdi-palette",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'Utilizes JavaScript template literals enhancing CSS to allow the ability to write direct CSS code to style React components.'
       },
       {
         name: "Reanimated",
         icon: "mdi-animation",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'React Native Library used to create smooth animations and interactions that run on the UI thread.'
       },
       {
         name: "Moti",
         icon: "mdi-animation",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'Powered by Reanimated 2, provides animations and transitions that work well across websites and native apps.'
       },
       {
         name: "Framer-motion",
         icon: "mdi-animation",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'React motion library that enables developers to create fully custom components, integrate 3rd party tools, and leverage other external code libraries.'
       },
       {
         name: "GraphQL",
         icon: "mdi-graphql",
         color: "#e535ab",
         hover: false,
-        expand: false,
+        info: 'Query language and server-side runtime for APIs that prioritizes giving clients exactly the data they request and nothing more.'
       },
       {
         name: "Expo",
         icon: "mdi-chevron-up",
         color: "#000",
         hover: false,
-        expand: false,
+        info: 'React framework and platform, comes with tools and services built around React Native nad other native platforms that help develop, build and deploy on iOS, Android and web apps from Javascript codebases.'
       },
       {
         name: "Bootstrap",
         icon: "mdi-bootstrap",
         color: "#563d7c",
         hover: false,
-        expand: false,
+        info: 'JavaScript framework, one of the most popular used in development to make responsive, mobile-first sites and apps.'
       },
-      {
-        name: "Python",
-        icon: "mdi-language-python",
-        color: "#306998",
-        hover: false,
-        expand: false,
-      },
+      // {
+      //   name: "Python",
+      //   icon: "mdi-language-python",
+      //   color: "#306998",
+      //   hover: false,
+      //   info: 'Hello'
+      // },
       {   
         name: "NodeJS", 
         icon: "mdi-nodejs", 
         color: "#3c873a", 
         hover: false,
-        expand: false, 
+        info: 'JavaScript run-time enviroment, based off Google\'s V8 engine, that helps execute JavaScript code outside of a web browser.'
       },
       {
         name: "Jest",
         icon: "mdi-ab-testing",
         color: "#15c213",
         hover: false,
-        expand: false,
+        info: 'JavaScript testing framework, designed to ensure correctness of JavaScript codebases.'
       },
     ],
   }),
