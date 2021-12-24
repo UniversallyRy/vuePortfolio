@@ -9,13 +9,12 @@
             <v-sheet
                 dark
                 class="mx-auto allProjects"
-                elevation="8"
+                elevation="16"
                 min-width="400"
             >
                 <v-slide-group
                     v-model="model"
-                    class="pa-13"
-                    active-class="success"
+                    class="pa-4"
                     show-arrows
                 >
                     <v-slide-item
@@ -23,14 +22,14 @@
                         :key="project.name"
                     >
                         <v-card
-                            class="demo ma-3"
-                            min-width="200"
-                            min-height="400"
+                            class="demo ma-2"
+                            width="250"
+                            height="525"
                         >
                             <v-img
                                 class="white--text align-end"
-                                height="550"
-                                max-width="400"
+                                height="400"
+                                max-width="245"
                                 :src="project.image"
                             >
                                 <v-card-title>{{ project.name }}</v-card-title>
@@ -39,7 +38,9 @@
                                 {{ truncate(project.description) }}
                             </v-card-text>
                             <v-card-actions>
+                                
                                 <v-btn
+                                bottom
                                     color="red"
                                     text
                                     :href="project.github"
@@ -61,7 +62,7 @@ export default {
         return {
             projects: [
                 {
-                    name:"NBA Score Checker",
+                    name:"Score Checker",
                     github:"https://github.com/UniversallyRy/scoreChecker",
                     description: "Score checking app created with React Native.",
                     image: "https://raw.githubusercontent.com/UniversallyRy/scoreChecker/main/demo/dateChange.gif"
@@ -75,14 +76,8 @@ export default {
                 {
                     name:"Todo App",
                     github:"https://github.com/UniversallyRy/reacttodo",
-                    description: "A Todo App created with React.",
+                    description: "A Todo App created with React and Redux.",
                     image: "https://user-images.githubusercontent.com/24601662/109756755-7f9a1200-7bb6-11eb-9f66-177307887582.png"
-                },
-                {
-                    name:"Pomodoro App",
-                    github:"https://github.com/UniversallyRy/pomov2",
-                    description: "Pomodoro App Created with React.",
-                    image: ""
                 },
                 {
                     name:"Tic Tac Toe App",
@@ -90,7 +85,12 @@ export default {
                     description: "A Tic Tac Toe game created with React",
                     image: "https://i.postimg.cc/tTrv6qfj/reactacttoescreenshot.png"
                 },
-                
+                {
+                    name:"Pomodoro App",
+                    github:"https://github.com/UniversallyRy/pomov2",
+                    description: "Pomodoro App Created with React.",
+                    image: ""
+                }
             ]
         }
     },
