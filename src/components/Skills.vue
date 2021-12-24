@@ -5,7 +5,31 @@
     grey
     style="overflow-x: hidden"
   >
-    <h2 class="display-2 mt-9 mb-3 font-weight-bold red--text">Skills</h2>
+    <v-row mb-3>
+      <v-col class="categories" cols="auto">
+        <h5 class="font-italic">
+          *Languages
+        </h5>  
+        <h5 class="font-italic">
+          *Framework
+        </h5>  
+        <h5 class="font-italic">
+          *Libraries
+        </h5>  
+        <h5 class="font-italic">
+          *UI
+        </h5>  
+        <h5 class="font-italic">
+          *Animation
+        </h5>  
+        <h5 class="font-italic">
+          *Misc
+        </h5>  
+      </v-col>
+      <v-col align-self="center" justify-self="center" cols="auto">
+        <h2 class="display-2 font-weight-bold red--text">Skills</h2>
+      </v-col>
+    </v-row>
     <v-divider class="mb-6" />
 
     <v-row class="px-4">
@@ -35,9 +59,10 @@
               </v-icon>
               {{ skill.name }}
             </p>
+            <v-progress-linear striped  :value="skill.experience" :color="skill.color"/>
           </template>
           <span>{{skill.info}}</span>
-        </v-tooltip>
+        </v-tooltip>  
       </v-col>
     </v-row>
   </v-container>
@@ -49,6 +74,7 @@ export default {
     skills: [
       {
         name: "JavaScript",
+        experience: "100",
         icon: "mdi-language-javascript",
         color: "#F0DB4F",
         category: 'language',
@@ -58,6 +84,7 @@ export default {
       {
         name: "HTML",
         icon: "mdi-language-html5",
+        experience: "100",
         color: "#e34c26",
         category: 'language',
         hover: false,
@@ -66,6 +93,7 @@ export default {
       {   
         name: "CSS", 
         icon: "mdi-language-css3",
+        experience: "85",
         color: "#2965f1", 
         category: 'language',
         hover: false,
@@ -74,6 +102,7 @@ export default {
       {   
         name: "React", 
         icon: "mdi-react", 
+        experience: "90",
         color: "#61DBFB", 
         category: 'library',
         hover: false,
@@ -81,6 +110,7 @@ export default {
       },
       {
         name: "React Native",
+        experience: "70",
         icon: "mdi-react",
         color: "#61DBFB",
         category: 'library',
@@ -89,6 +119,7 @@ export default {
       },
       {
         name: "Redux Toolkit",
+        experience: "65",
         icon: "mdi-react",
         color: "#764abc ",
         category: 'library',
@@ -97,6 +128,7 @@ export default {
       },
       {
         name: "TypeScript",
+        experience: "50",
         icon: "mdi-language-typescript",
         color: "#719af4",
         category: 'library',
@@ -105,6 +137,7 @@ export default {
       },
       {   
         name: "Vue.js", 
+        experience: "70",
         icon: "mdi-vuejs", 
         color: "#41B883", 
         category: 'framework',
@@ -113,6 +146,7 @@ export default {
       },
       {   
         name: "Vuetify", 
+        experience: "70",
         icon: "mdi-vuetify", 
         color: "#42A5F5", 
         category: 'framework',
@@ -121,54 +155,61 @@ export default {
       },
       {
         name: "Native-base",
+        experience: "60",
         icon: "mdi-palette",
-        color: "#e535ab",
+        color: "#0e7490",
         category: 'ui',
         hover: false,
         info: 'Component library built on top of React Native, allows developers to build universal designs.'
       },
       {
         name: "Chakra-UI",
+        experience: "50",
         icon: "mdi-palette",
-        color: "#e535ab",
+        color: "#3a5311",
         category: 'ui',
         hover: false,
         info: 'Simple, modular and accesible component library, provides building blocks for React apps.'
       },
       {
         name: "styled-components",
+        experience: "90",
         icon: "mdi-palette",
-        color: "#e535ab",
+        color: "#e16b8b",
         category: 'ui',
         hover: false,
         info: 'Utilizes JavaScript template literals enhancing CSS to allow the ability to write direct CSS code to style React components.'
       },
       {
         name: "Reanimated",
+        experience: "40",
         icon: "mdi-animation",
-        color: "#e535ab",
+        color: "#61DBFB",
         category: 'animation',
         hover: false,
         info: 'React Native Library used to create smooth animations and interactions that run on the UI thread.'
       },
       {
         name: "Moti",
+        experience: "70",
         icon: "mdi-animation",
-        color: "#e535ab",
+        color: "#b042ff",
         category: 'animation',
         hover: false,
         info: 'Powered by Reanimated 2, provides animations and transitions that work well across websites and native apps.'
       },
       {
         name: "Framer-motion",
+        experience: "50",
         icon: "mdi-animation",
-        color: "#e535ab",
+        color: "#ff00f7",
         category: 'animation',
         hover: false,
         info: 'React motion library that enables developers to create fully custom components, integrate 3rd party tools, and leverage other external code libraries.'
       },
       {
         name: "GraphQL",
+        experience: "40",
         icon: "mdi-graphql",
         color: "#e535ab",
         category: 'language',
@@ -177,6 +218,7 @@ export default {
       },
       {
         name: "Expo",
+        experience: "90",
         icon: "mdi-chevron-up",
         color: "#000",
         category: 'framework',
@@ -185,6 +227,7 @@ export default {
       },
       {
         name: "Bootstrap",
+        experience: "70",
         icon: "mdi-bootstrap",
         color: "#563d7c",
         category: 'framework',
@@ -200,6 +243,7 @@ export default {
       // },
       {   
         name: "NodeJS", 
+        experience: "100",
         icon: "mdi-nodejs", 
         color: "#3c873a", 
         category: 'misc',
@@ -208,6 +252,7 @@ export default {
       },
       {
         name: "Jest",
+        experience: "60",
         icon: "mdi-ab-testing",
         color: "#15c213",
         category: 'framework',
@@ -222,5 +267,8 @@ export default {
 <style>
   .category-text {
     transform: rotate(90deg);
+  }
+  .categories {
+    font-size: 0.7em;
   }
 </style>
