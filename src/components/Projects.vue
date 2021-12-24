@@ -6,52 +6,57 @@
                     <h1 class="red--text">Projects</h1>
                 </v-col>
             </v-row>
-            <v-sheet
-                dark
-                class="mx-auto allProjects"
-                elevation="16"
-                min-width="400"
-            >
-                <v-slide-group
-                    v-model="model"
-                    class="pa-4"
-                    show-arrows
-                >
-                    <v-slide-item
-                        v-for="project in projects"
-                        :key="project.name"
+            <v-divider class="mb-6 mt-1" />
+            <v-hover>
+                <template v-slot:default="{ hover }">
+                    <v-card
+                        dark
+                        :class="`elevation-${hover ? 20 : 10}`"
+                        class="mx-auto mb-2"
+                        min-width="400"
                     >
-                        <v-card
-                            class="demo ma-2"
-                            width="250"
-                            height="525"
+                        <v-slide-group
+                            v-model="model"
+                            class="pa-4"
+                            show-arrows
                         >
-                            <v-img
-                                class="white--text align-end"
-                                height="400"
-                                max-width="245"
-                                :src="project.image"
+                            <v-slide-item
+                                v-for="project in projects"
+                                :key="project.name"
                             >
-                                <v-card-title>{{ project.name }}</v-card-title>
-                            </v-img>
-                            <v-card-text class="text--primary">
-                                {{ truncate(project.description) }}
-                            </v-card-text>
-                            <v-card-actions>
-                                
-                                <v-btn
-                                bottom
-                                    color="red"
-                                    text
-                                    :href="project.github"
+                                <v-card
+                                    class="ma-2"
+                                    width="250"
+                                    height="525"
                                 >
-                                    See Code
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-slide-item>
-                </v-slide-group>
-            </v-sheet>
+                                    <v-img
+                                        class="white--text align-end"
+                                        height="400"
+                                        max-width="245"
+                                        :src="project.image"
+                                    >
+                                        <v-card-title>{{ project.name }}</v-card-title>
+                                    </v-img>
+                                    <v-card-text class="text--primary">
+                                        {{ truncate(project.description) }}
+                                    </v-card-text>
+                                    <v-card-actions>
+                                        
+                                        <v-btn
+                                        bottom
+                                            color="red"
+                                            text
+                                            :href="project.github"
+                                        >
+                                            See Code
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-slide-item>
+                        </v-slide-group>
+                    </v-card>
+                </template>
+            </v-hover>
         </v-container>
     </section>
 </template>
@@ -112,11 +117,5 @@ export default {
     }
     .v-image {
         border: 1px solid #242331;
-    }
-    .demo{
-        margin-bottom: 15px;
-    }
-    .v-sheet {
-        margin-top: 30px;
     }
 </style>
