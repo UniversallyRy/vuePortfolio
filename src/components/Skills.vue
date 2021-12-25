@@ -5,21 +5,22 @@
     grey
     style="overflow-x: hidden"
   >
-    <v-row>
-      <v-col 
-        v-for="category in categories"
-        :key="category"
-        cols="auto"
-        class="categories" 
-        :color="category.color"
-      >
-        <subtitle-2 v-bind:style="{ color: category.color}" class="font-italic d-block">
-          {{category.name}}
-        </subtitle-2>  
-      </v-col>
-      <v-col align-self="center" justify-self="center" offset="2" cols="1">
+    <v-row no-gutters>
+      <v-layout align-start column>
+        <div 
+          v-for="category in categories"
+          :key="category"
+          class="categories" 
+          :color="category.color"
+        >
+          <subtitle-2 v-bind:style="{ color: category.color}" class="font-italic">
+            {{category.name}}
+          </subtitle-2>
+        </div>
+      </v-layout>
+      <v-container align-start>
         <h2 class="display-2 font-weight-bold red--text">Skills</h2>
-      </v-col>
+      </v-container>
     </v-row>
     <v-divider class="mb-6" />
     <v-row class="px-4">
