@@ -7,9 +7,9 @@
 </template>
 
 <script>
-// todos: diagonal header, better spacing, add more projects
+// todos: diagonal header, better spacing, more projects
 // style page(cool tone colors?), add more components and optimize code and site speed
-// blog categories, add blog entries(summaries, etc) taglike corners for sections, fix horizontal shift+mm scroll
+// blog categories, add blog entries(summaries, etc) taglike corners for sections
 import About from "@/components/About.vue";
 import Skills from "@/components/Skills.vue";
 import Projects from "@/components/Projects.vue";
