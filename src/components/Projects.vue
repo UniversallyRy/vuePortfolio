@@ -33,6 +33,8 @@
                                         class="white--text align-end"
                                         height="400"
                                         max-width="245"
+                                        :width="width"
+                                        :aspect-ratio="16/9"
                                         :src="project.image"
                                     >
                                         <v-card-title>{{ project.name }}</v-card-title>
@@ -79,6 +81,12 @@ export default {
                     image: "https://raw.githubusercontent.com/UniversallyRy/rnvisionsdreamsideas/main/demo/visions.gif"
                 },
                 {
+                    name:"Book Search",
+                    github:"https://github.com/UniversallyRy/booksAndPoetry",
+                    description: "Next.js SPA using Google Book's API.",
+                    image: "https://github.com/UniversallyRy/booksAndPoetry/raw/main/public/dark.png"
+                },
+                {
                     name:"Todo App",
                     github:"https://github.com/UniversallyRy/reacttodo",
                     description: "A Todo App created with React and Redux.",
@@ -90,12 +98,6 @@ export default {
                     description: "A Tic Tac Toe game created with React",
                     image: "https://i.postimg.cc/tTrv6qfj/reactacttoescreenshot.png"
                 },
-                {
-                    name:"Pomodoro App",
-                    github:"https://github.com/UniversallyRy/pomov2",
-                    description: "Pomodoro App Created with React.",
-                    image: ""
-                }
             ]
         }
     },
