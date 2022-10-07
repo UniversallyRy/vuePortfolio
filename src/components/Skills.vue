@@ -102,6 +102,15 @@ export default {
         barColor: "#F0DB4F",
         hover: false,
       },
+      {
+        name: "Lua",
+        info: 'Lua is a lightweight, high-level, multi-paradigm programming language designed primarily for embedded use in applications',
+        experience: "70", 
+        icon: "mdi-language-lua",
+        color: "#000080",
+        barColor: "#F0DB4F",
+        hover: false,
+      },
       {   
         name: "React", 
         info: 'JavaScript library specializing in helping create user interfaces and other interactive elements.',
