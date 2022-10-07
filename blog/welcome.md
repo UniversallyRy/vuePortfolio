@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to the blog'
+title: "Welcome to the blog"
 date: 2021-03-17
 ---
 

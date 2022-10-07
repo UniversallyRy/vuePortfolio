@@ -1,5 +1,5 @@
 ---
-title: 'Spawn Book 1'
+title: "Spawn Book 1"
 date: 2021-03-17
 ---
 

@@ -17,15 +17,15 @@ import Blogs from "@/components/BlogPostList.vue";
 
 export default {
   metaInfo: {
-    title: "UniversallyRy's Portfolio",
+    title: "UniversallyRy's Portfolio"
   },
   components: {
     About,
     Skills,
     Projects,
-    Blogs,
+    Blogs
   },
-  methods: {},
+  methods: {}
 };
 </script>
 

@@ -61,7 +61,7 @@ export default {
       items: [
         { title: "About", icon: "mdi-account-circle-outline" },
         { title: "Skills", icon: "mdi-diamond-outline" },
-        { title: "Projects", icon: "mdi-folder-table-outline" },
+        { title: "Projects", icon: "mdi-folder-table-outline" }
       ],
       blog: [{ title: "Blogs", icon: "mdi-blogger" }],
       links: [
@@ -69,31 +69,31 @@ export default {
           name: "Github",
           url: "https://github.com/UniversallyRy",
           image:
-            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg",
+            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
         },
         {
           name: "Twitter",
           url: "https://twitter.com/UniversallyRy",
           image:
-            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg",
+            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg"
         },
         {
           name: "Instagram",
           url: "https://instagram.com/UniversallyRy",
           image:
-            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg",
+            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
         },
         {
           name: "LinkedIn",
           url: "https://linkedin.com/",
           image:
-            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg",
-        },
+            "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
+        }
       ],
       right: null,
-      drawer: false,
+      drawer: false
     };
-  },
+  }
 };
 </script>
 
@@ -115,7 +115,7 @@ query {
   background-color: black;
 }
 .v-list-item {
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
 }
 .contact-icon {
   height: 25px;
