@@ -11,11 +11,14 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "BlogPost",
-        path: "./blog/**/*.md",
-      },
+        path: "./blog/**/*.md"
+      }
     },
+    {
+      use: "gridsome-plugin-typescript"
+    }
   ],
   templates: {
-    BlogPost: "/blog/:title",
-  },
+    BlogPost: "/blog/:title"
+  }
 };

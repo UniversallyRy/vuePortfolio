@@ -57,9 +57,12 @@
   </v-card>
 </template>
 
-<script>
-export default {
-  props: ["posts"],
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  // string array TS needed
+  props: { ["posts"]: String },
   data() {
     return {
       categories: [
@@ -70,7 +73,7 @@ export default {
       ]
     };
   }
-};
+});
 </script>
 
 <style>
