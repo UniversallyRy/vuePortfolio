@@ -6,11 +6,7 @@
       <v-row>
         <v-col class="d-flex justify-space-around" sm="2" offset-sm="10">
           <v-icon></v-icon>
-          <a
-            v-for="link in links"
-            v-bind:href="link.url"
-            v-bind:key="link.name"
-          >
+          <a v-for="link in links" :href="link.url" :key="link.name">
             <img :key="link.name" class="contact-icon" :src="link.image" />
           </a>
         </v-col>
@@ -20,9 +16,9 @@
       <v-list dense nav>
         <v-list-item
           v-for="item in items"
+          :to="`#${item.title.toLowerCase()}`"
           :key="item.title"
           link
-          :to="`#${item.title.toLowerCase()}`"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -33,14 +29,13 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
+          :to="`${blog[0].title.toLowerCase()}`"
           :key="blog[0].title"
           link
-          :to="`${blog[0].title.toLowerCase()}`"
         >
           <v-list-item-icon>
             <v-icon>{{ blog[0].icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
             <v-list-item-title>{{ blog[0].title }}</v-list-item-title>
           </v-list-item-content>
