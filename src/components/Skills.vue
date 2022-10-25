@@ -70,12 +70,10 @@
 </template>
 
 <script>
-import skillData from "@/skillData.ts";
+import skillData from "~/skillsData.ts";
 
 export default {
-  data: () => ({
-    skillData
-  })
+  data: () => skillData
 };
 </script>
 

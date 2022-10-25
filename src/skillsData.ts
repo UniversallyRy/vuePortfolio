@@ -8,7 +8,7 @@ export const skillData = {
       icon: "mdi-language-javascript",
       color: "#F0DB4F",
       barColor: "#F0DB4F",
-      hover: false,
+      hover: false
     },
     {
       name: "HTML",
@@ -18,7 +18,7 @@ export const skillData = {
       icon: "mdi-language-html5",
       color: "#e34c26",
       barColor: "#F0DB4F",
-      hover: false,
+      hover: false
     },
     {
       name: "CSS",
@@ -28,7 +28,7 @@ export const skillData = {
       icon: "mdi-language-css3",
       color: "#2965f1",
       barColor: "#F0DB4F",
-      hover: false,
+      hover: false
     },
     {
       name: "Lua",
@@ -38,7 +38,7 @@ export const skillData = {
       icon: "mdi-language-lua",
       color: "#000080",
       barColor: "#F0DB4F",
-      hover: false,
+      hover: false
     },
     {
       name: "React",
@@ -48,7 +48,7 @@ export const skillData = {
       icon: "mdi-react",
       color: "#61DBFB",
       barColor: "#764abc",
-      hover: false,
+      hover: false
     },
     {
       name: "React Native",
@@ -57,7 +57,7 @@ export const skillData = {
       icon: "mdi-react",
       color: "#61DBFB",
       barColor: "#764abc",
-      hover: false,
+      hover: false
     },
     {
       name: "Redux Toolkit",
@@ -66,7 +66,7 @@ export const skillData = {
       icon: "mdi-react",
       color: "#764abc ",
       barColor: "#764abc",
-      hover: false,
+      hover: false
     },
     {
       name: "TypeScript",
@@ -76,7 +76,7 @@ export const skillData = {
       icon: "mdi-language-typescript",
       color: "#719af4",
       barColor: "#764abc",
-      hover: false,
+      hover: false
     },
     {
       name: "Vue.js",
@@ -86,7 +86,7 @@ export const skillData = {
       icon: "mdi-vuejs",
       color: "#41B883",
       barColor: "#61DBFB",
-      hover: false,
+      hover: false
     },
     {
       name: "Vuetify",
@@ -96,7 +96,7 @@ export const skillData = {
       icon: "mdi-vuetify",
       color: "#42A5F5",
       barColor: "#61DBFB",
-      hover: false,
+      hover: false
     },
     {
       name: "native-base",
@@ -106,7 +106,7 @@ export const skillData = {
       icon: "mdi-palette",
       color: "#0e7490",
       barColor: "#3a5311",
-      hover: false,
+      hover: false
     },
     {
       name: "chakra-ui",
@@ -116,7 +116,7 @@ export const skillData = {
       icon: "mdi-palette",
       color: "#3a5311",
       barColor: "#3a5311",
-      hover: false,
+      hover: false
     },
     {
       name: "styled-components",
@@ -126,7 +126,7 @@ export const skillData = {
       icon: "mdi-palette",
       color: "#e16b8b",
       barColor: "#3a5311",
-      hover: false,
+      hover: false
     },
     {
       name: "reanimated",
@@ -136,7 +136,7 @@ export const skillData = {
       icon: "mdi-animation",
       color: "#61DBFB",
       barColor: "#ff00f7",
-      hover: false,
+      hover: false
     },
     {
       name: "moti",
@@ -146,7 +146,7 @@ export const skillData = {
       icon: "mdi-animation",
       color: "#b042ff",
       barColor: "#ff00f7",
-      hover: false,
+      hover: false
     },
     {
       name: "framer-motion",
@@ -156,7 +156,7 @@ export const skillData = {
       icon: "mdi-animation",
       color: "#ff00f7",
       barColor: "#ff00f7",
-      hover: false,
+      hover: false
     },
     {
       name: "graphQL",
@@ -166,7 +166,7 @@ export const skillData = {
       icon: "mdi-graphql",
       color: "#e535ab",
       barColor: "#F0DB4F",
-      hover: false,
+      hover: false
     },
     {
       name: "expo",
@@ -176,7 +176,7 @@ export const skillData = {
       icon: "mdi-chevron-up",
       color: "#000",
       barColor: "#61DBFB",
-      hover: false,
+      hover: false
     },
     {
       name: "Bootstrap",
@@ -186,7 +186,7 @@ export const skillData = {
       icon: "mdi-bootstrap",
       color: "#563d7c",
       barColor: "#61DBFB",
-      hover: false,
+      hover: false
     },
     {
       info:
@@ -195,7 +195,7 @@ export const skillData = {
       experience: "100",
       icon: "mdi-nodejs",
       color: "#3c873a",
-      hover: false,
+      hover: false
     },
     {
       name: "Jest",
@@ -205,34 +205,36 @@ export const skillData = {
       icon: "mdi-ab-testing",
       color: "#15c213",
       barColor: "#61DBFB",
-      hover: false,
-    },
+      hover: false
+    }
   ],
 
   categories: [
     {
       name: "*Languages",
-      color: "#F0DB4F",
+      color: "#F0DB4F"
     },
     {
       name: "*Framework",
-      color: "#61DBFB",
+      color: "#61DBFB"
     },
     {
       name: "*Libraries",
-      color: "#764abc",
+      color: "#764abc"
     },
     {
       name: "*UI",
-      color: "#3a5311",
+      color: "#3a5311"
     },
     {
       name: "*Animation",
-      color: "#ff00f7",
+      color: "#ff00f7"
     },
     {
       name: "*Misc",
-      color: "",
-    },
-  ],
+      color: ""
+    }
+  ]
 };
+
+export default skillData;
