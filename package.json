@@ -1,7 +1,6 @@
 {
   "name": "gridsomeportfolio",
   "private": true,
-  "type": "module",
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
