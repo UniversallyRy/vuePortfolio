@@ -99,6 +99,16 @@ export const skillData = {
       hover: false
     },
     {
+      name: "tailwindcss",
+      info:
+        "Component library built on top of React Native, allows developers to build universal designs.",
+      experience: "30",
+      icon: "mdi-palette",
+      color: "#0e7490",
+      barColor: "#3a5311",
+      hover: false
+    },
+    {
       name: "native-base",
       info:
         "Component library built on top of React Native, allows developers to build universal designs.",
